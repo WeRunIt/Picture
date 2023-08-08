@@ -26,7 +26,7 @@
             
             <input type="checkbox" id="darkmode-toggle"/>
 
-            <label for="darkmode-toggle">
+            <label for="darkmode-toggle" id="label1">
 
                 <svg version="1.1" class="sun" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 496 496" style="enable-background:new 0 0 496 496;" xml:space="preserve">
@@ -113,7 +113,7 @@
 
                     <p>ALL WALLPAPER:</p> 
                     
-                    <a id="link1" href="#" class="active">AI WALLPAPER</a>
+                    <a id="link1" href="#AI-Wallpaper" class="active">AI WALLPAPER</a>
 
                     <a id="link2" href="#">ABSTRACT WALLPAPER</a>
 
@@ -169,36 +169,13 @@
 
             </h1>
 
-            <section id="section2">
+            <section id="AI-Wallpaper">
 
-                    <div id="div10">
+                <div id="div10">
 
-                        <a href="#"><img src="wallpaper/'My Reality' Poster by Lou Patrick Mackay _ Displate.jpg" alt=""></a>
-
-                        <a href="#"><img src="wallpaper/download (1).jpg" alt=""></a>
-                         
-                        <a href="#"><img src="wallpaper/download.png" alt=""></a>
-
-                        <a href="#"><img src="wallpaper/Free  Sketch, Fuck, You Background Images, Sketch Black And White Background Finger Photo Background PNG and Vectors.jpg" alt=""></a>
-
-                        <a href="#"><img src="wallpaper/It is what it is wallpaper by 1nikkireps - Download on ZEDGE™ _ 0ccd.jpg" alt=""></a>
-
-                        <a href="#"><img src="wallpaper/Life - IPhone Wallpapers.jpg" alt=""></a>
-
-                        <a href="#"><img src="wallpaper/T42 Zomb Series.jpg" alt=""></a>
-
-                        <a href="#"><img src="wallpaper/WhatsApp Image 2023-07-26 at 6.00.52 PM.jpeg" alt=""></a>
-
-                        <a href="#"><img src="wallpaper/WhatsApp Image 2023-07-26 at 6.00.53 PM (1).jpeg" alt=""></a>
-
-                        <a href="#"><img src="wallpaper/WhatsApp Image 2023-07-26 at 6.00.53 PM.jpeg" alt=""></a>
-
-
-                        <a href="#"><img src="wallpaper/WhatsApp Image 2023-07-26 at 6.00.54 PM (1).jpeg" alt=""></a>
-
-                        <a href="#"><img src="wallpaper/WhatsApp Image 2023-07-26 at 6.00.54 PM.jpeg" alt=""></a>
-
-                    </div>
+                    <a href="#" download><img src="/AI wallpaper/1343.PNG" alt=""></a>
+                    
+                </div>
 
             </section>
 
@@ -365,20 +342,14 @@
         document.querySelector('.sidebar').classList.toggle('active');
     });
 
-    function heading() {
-  var heading = ['High-Quality Wallpapers with AI-Powered Creativity', 'Inspirational Wallpapers for Your Phone, PC, and More', 'The Best Wallpapers for Every Mood', 'Wallpapers that Will Make Your Device Look Amazing', 'Wallpapers that Will Change Your Life', 'Wallpapers that Will Make You Feel More Creative', 'Wallpapers that Will Make You Feel More Inspired'];
-  var i = Math.floor(Math.random() * heading.length);
-  var span1 = document.querySelector('#span1');
+        function heading() {
+    var heading = ['High-Quality Wallpapers with AI-Powered Creativity', 'Inspirational Wallpapers for Your Phone, PC, and More', ' Best Wallpapers for Every Mood', 'Wallpapers to Make Your Device Look Amazing',  'Wallpapers to make You Feel More Creative', 'Wallpapers to inspire your next design'];
+    var i = Math.floor(Math.random() * heading.length);
+    var span1 = document.querySelector('#span1');
 
-  span1.textContent = heading[i];
-}
+    span1.textContent = heading[i];
+    }
 
-setInterval(heading, 5000);
-
-    var name1 = ['MHAMAD', 'MHAMED', 'MAJD', 'ALI', 'ABBASS'];
-    console.log(name1);
-    name1.sort();
-    console.log(name1);
-
+    setInterval(heading, 10000);
 
 </script>
