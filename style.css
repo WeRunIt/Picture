@@ -911,11 +911,17 @@ h1 span {
 }
 
 h1 {
+    padding-top: 20px;
     display: block;
     width: 100%;
-    position: absolute; top: 30px;left: 0px;
     padding-inline: 20px;
     height: fit-content;
+}
+
+#div13 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 @keyframes fadeInOut {
