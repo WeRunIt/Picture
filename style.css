@@ -845,6 +845,8 @@ footer #div4 li:hover {
     gap: 20px;
     justify-items: center;
     padding: 40px;
+    position: relative; top: 50px;
+    width: 100%;
 }
 
 #div10 a {
