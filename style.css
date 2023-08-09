@@ -832,7 +832,7 @@ footer #div4 li:hover {
     display: flex;
     width: 100%;
     height: fit-content;
-    position: relative; top: -250px;
+    position: relative; top: -200px;
     justify-content: center;
     align-items: center;
     align-content: center;
@@ -863,6 +863,8 @@ footer #div4 li:hover {
     max-width: 300px;
     height: 100%;
     object-fit: cover;
+    background-color: #e9ecef;
+    content-visibility: auto;
 }
 
 @media screen and (max-width:1199px) {
