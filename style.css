@@ -22,7 +22,7 @@ body::-webkit-scrollbar {
 
 body.dark-mode {
     background-color: #343a40;
-    color: #e9ecef;
+    color: #b5b5b5;
 }
 
 header {
@@ -832,12 +832,18 @@ footer #div4 li:hover {
     display: flex;
     width: 100%;
     height: fit-content;
-    position: relative; top: -200px;
+    position: relative; top: -350px;
     justify-content: center;
     align-items: center;
     align-content: center;
     padding-block: 300px;
 }   
+
+#Ai-wallapper-h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding-left: 35px;
+    white-space: nowrap;
+}
 
 #div10 {
     display: grid;
@@ -865,11 +871,50 @@ footer #div4 li:hover {
     object-fit: cover;
     background-color: #e9ecef;
     content-visibility: auto;
+    z-index: 1;
+    transition: 0.4s ease-out;
+}
+
+#div10 a img:hover {
+    z-index: 1000;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:2000px) {
+    #div10 {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 15px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:1700px) {
+    #div10 {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    #div10 {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:1320px) {
+    #div10 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 30px;
+    }
 }
 
 @media screen and (max-width:1199px) {
     #div10 {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         gap: 15px;
         padding: 30px;
     }
@@ -885,7 +930,7 @@ footer #div4 li:hover {
 
 @media screen and (max-width:767px) {
     #div10 {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         padding: 15px;
     }
@@ -914,14 +959,15 @@ h1 {
     padding-top: 20px;
     display: block;
     width: 100%;
-    padding-inline: 20px;
-    height: fit-content;
+    padding-inline: 10px;
+    max-height: 200px;
+    min-height: 100px;
 }
 
 #div13 {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 @keyframes fadeInOut {
