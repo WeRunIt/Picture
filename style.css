@@ -7,13 +7,14 @@
 }
 
 body {
-    min-height: 100vh;
+    min-height: 100%;
     width: 100%;
     background-color: #e9ecef;
     color: #343a40;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    scroll-behavior:smooth;
 }
 
 body::-webkit-scrollbar {
@@ -832,17 +833,18 @@ footer #div4 li:hover {
     display: flex;
     width: 100%;
     height: fit-content;
-    position: relative; top: -350px;
+    position: relative; top: -150px;
     justify-content: center;
     align-items: center;
     align-content: center;
-    padding-block: 300px;
+    padding-block: 50px;
 }   
 
 #Ai-wallapper-h1 {
     font-family: 'Alegreya Sans SC', sans-serif;
     padding-left: 35px;
     white-space: nowrap;
+    font-size: 50px;
 }
 
 #div10 {
@@ -934,14 +936,17 @@ footer #div4 li:hover {
         gap: 10px;
         padding: 15px;
     }
+
 }
 
 @media screen and (max-width:575px) {
+    
     #div10 {
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 10px;
     }
+
 }
 
 #main1:nth-child(2) {
@@ -981,48 +986,266 @@ h1 {
   
 @media screen and  (max-width:1199px) {
     
-   main h1 span {
-        font-size: 50px;
+    main h1 span {
+        padding-top: 15px;
+        font-size: 45px;
+        position: absolute; top: 10px; left: 10px;
+        height: fit-content;
+        width: fit-content;
+        padding-right: 10px;
     }
+
+    #div13 h1 {
+        font-size: 40px;
+        padding-left: 20px;
+        position: relative; top: -5px;
+    } 
+
 }
 
 @media screen and  (max-width:991px) {
     
-   main h1 span {
-        font-size: 35px;
+    main h1 span {
+        padding-top: 15px;
+        font-size: 40px;
+        position: absolute; top: 10px; left: 10px;
+        height: fit-content;
+        width: fit-content;
+        padding-right: 10px;
     }
+
+    #div13 h1 {
+        font-size: 50px;
+        padding-left: 30px;
+        position: relative; top: -10px;
+    } 
+
 }
 
 @media screen and  (max-width:767px) {
     
-   main h1 span {
-        font-size: 30px;
+    main h1 span {
+        padding-top: 15px;
+        font-size: 40px;
+        position: absolute; top: 5px; left: 10px;
+        height: fit-content;
+        width: fit-content;
+        padding-right: 10px;
     }
+
+    #div13 h1 {
+        font-size: 40px;
+        padding-left: 20px;
+        position: relative; top: -5px;
+    } 
+
 }
 
 @media screen and  (max-width:575px) {
     
-   main h1 span {
-        font-size: 25px;
+    main h1 span {
+        padding-top: 15px;
+        font-size: 40px;
+        position: absolute; top: -10px; left: 10px;
+        height: fit-content;
+        width: fit-content;
+        padding-right: 10px;
     }
+
+    #div13 h1 {
+        font-size: 40px;
+        padding-left: 20px;
+        position: relative; top: -5px;
+    } 
+
 }
 
 @media screen and  (max-width:360px) {
     
    main h1 span {
-        font-size: 30px;
+    padding-top: 15px;
+        font-size: 25px;
+        position: absolute; top: -10px; left: 10px;
+        height: fit-content;
+        width: fit-content;
     }
+
+    #div13 h1 {
+        font-size: 30px;
+        padding-left: 20px;
+        position: relative; top: 0px;
+    }
+
 }
 
 @media screen and (max-width:470px) {
+
     #label1 {
         position: relative; left: 50px;
     }
+
+    main h1 span {
+        padding-top: 15px;
+        font-size: 30px;
+        position: absolute; top: -10px; left: 10px;
+        height: fit-content;
+        width: fit-content;
+        padding-right: 10px;
+    }
+
+    #div13 h1 {
+        font-size: 40px;
+        padding-left: 20px;
+        position: relative; top: -5px;
+    } 
+
 }
 
 @media screen and (max-width:320px) {
+
     #label1 {
         position: relative; left: 80px;
     }
+
+    main h1 span {
+        padding-top: 10px;
+        font-size: 30px;
+        position: absolute; top: -10px; left: 10px;
+        height: fit-content;
+        width: fit-content;
+        padding-right: 10px;
+    }
+
+    #div13 h1 {
+        font-size: 30px;
+        padding-left: 20px;
+        position: relative; top: 0px;
+    }
+
 }
 
+#ABSTRACT {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    position: relative; top: -150px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-block: 300px;
+}   
+
+#ABSTRACT-h1 {
+    font-family: 'Alegreya Sans SC', sans-serif;
+    padding-left: 35px;
+    white-space: nowrap;
+    position: relative; top: 0px;
+    font-size: 50px;
+}
+
+#div14 {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 20px;
+    justify-items: center;
+    padding: 40px;
+    position: relative; top: -200px;
+    width: 100%;
+}
+
+#div14 a {
+    display: block;
+    width: 100%;
+}
+
+#div14 img {
+    filter: blur(0);
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: 100%;
+    object-fit: cover;
+    background-color: #e9ecef;
+    content-visibility: auto;
+    z-index: 1;
+    transition: 0.4s ease-out;
+}
+
+#div14 a img:hover {
+    z-index: 1000;
+    transform: scale(1.1);
+}
+
+@media screen and (max-width:2000px) {
+
+    #div14 {
+        grid-template-columns: repeat(7, 1fr);
+        gap: 15px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:1700px) {
+
+    #div14 {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+
+    #div14 {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 15px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:1320px) {
+
+    #div14 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+
+    #div14 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    #div14 {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    #div14 {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    #div14 {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+}
