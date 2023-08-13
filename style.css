@@ -803,6 +803,11 @@ footer #div4 li:hover {
     background-color: #adb5bd;
     flex: 1;
     padding-bottom: 100px;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #main.dark-mode {
@@ -833,18 +838,19 @@ footer #div4 li:hover {
     display: flex;
     width: 100%;
     height: fit-content;
-    position: relative; top: -150px;
+    position: relative; top: -100px;
     justify-content: center;
     align-items: center;
     align-content: center;
     padding-block: 50px;
 }   
 
-#Ai-wallapper-h1 {
+#Ai-wallpaper-h1 {
     font-family: 'Alegreya Sans SC', sans-serif;
     padding-left: 35px;
     white-space: nowrap;
     font-size: 50px;
+    position: relative; top: 100px;
 }
 
 #div10 {
@@ -853,7 +859,7 @@ footer #div4 li:hover {
     gap: 20px;
     justify-items: center;
     padding: 40px;
-    position: relative; top: 50px;
+    position: relative; top: 100px;
     width: 100%;
 }
 
@@ -888,6 +894,16 @@ footer #div4 li:hover {
         gap: 15px;
         padding: 30px;
     }
+
+    main h1 span {
+        padding-top: 15px;
+        font-size: 50px;
+        position: absolute; top: 10px; left: 10px;
+        height: fit-content;
+        width: fit-content;
+        padding-right: 10px;
+    }
+
 }
 
 @media screen and (max-width:1700px) {
@@ -896,6 +912,16 @@ footer #div4 li:hover {
         gap: 15px;
         padding: 30px;
     }
+
+    main h1 span {
+        padding-top: 15px;
+        font-size: 50px;
+        position: absolute; top: 10px; left: 10px;
+        height: fit-content;
+        width: fit-content;
+        padding-right: 10px;
+    }
+
 }
 
 @media screen and (max-width:1500px) {
@@ -904,6 +930,16 @@ footer #div4 li:hover {
         gap: 15px;
         padding: 30px;
     }
+    
+    main h1 span {
+        padding-top: 15px;
+        font-size: 50px;
+        position: absolute; top: 10px; left: 10px;
+        height: fit-content;
+        width: fit-content;
+        padding-right: 10px;
+    }
+
 }
 
 @media screen and (max-width:1320px) {
@@ -912,6 +948,16 @@ footer #div4 li:hover {
         gap: 15px;
         padding: 30px;
     }
+
+    main h1 span {
+        padding-top: 15px;
+        font-size: 50px;
+        position: absolute; top: 10px; left: 10px;
+        height: fit-content;
+        width: fit-content;
+        padding-right: 10px;
+    }
+
 }
 
 @media screen and (max-width:1199px) {
@@ -988,8 +1034,8 @@ h1 {
     
     main h1 span {
         padding-top: 15px;
-        font-size: 45px;
-        position: absolute; top: 10px; left: 10px;
+        font-size: 50px;
+        position: absolute; top: -90px; left: 10px;
         height: fit-content;
         width: fit-content;
         padding-right: 10px;
@@ -997,8 +1043,8 @@ h1 {
 
     #div13 h1 {
         font-size: 40px;
-        padding-left: 20px;
-        position: relative; top: -5px;
+        padding-left: 40px;
+        position: relative; top: 90px;
     } 
 
 }
@@ -1007,8 +1053,8 @@ h1 {
     
     main h1 span {
         padding-top: 15px;
-        font-size: 40px;
-        position: absolute; top: 10px; left: 10px;
+        font-size: 45px;
+        position: absolute; top: -90px; left: 10px;
         height: fit-content;
         width: fit-content;
         padding-right: 10px;
@@ -1017,7 +1063,7 @@ h1 {
     #div13 h1 {
         font-size: 50px;
         padding-left: 30px;
-        position: relative; top: -10px;
+        position: relative; top: 90px;
     } 
 
 }
@@ -1027,7 +1073,7 @@ h1 {
     main h1 span {
         padding-top: 15px;
         font-size: 40px;
-        position: absolute; top: 5px; left: 10px;
+        position: absolute; top: -90px; left: 10px;
         height: fit-content;
         width: fit-content;
         padding-right: 10px;
@@ -1036,7 +1082,7 @@ h1 {
     #div13 h1 {
         font-size: 40px;
         padding-left: 20px;
-        position: relative; top: -5px;
+        position: relative; top: 90px;
     } 
 
 }
@@ -1046,7 +1092,7 @@ h1 {
     main h1 span {
         padding-top: 15px;
         font-size: 40px;
-        position: absolute; top: -10px; left: 10px;
+        position: absolute; top: -90px; left: 10px;
         height: fit-content;
         width: fit-content;
         padding-right: 10px;
@@ -1055,7 +1101,7 @@ h1 {
     #div13 h1 {
         font-size: 40px;
         padding-left: 20px;
-        position: relative; top: -5px;
+        position: relative; top: 90px;
     } 
 
 }
@@ -1073,7 +1119,7 @@ h1 {
     #div13 h1 {
         font-size: 30px;
         padding-left: 20px;
-        position: relative; top: 0px;
+        position: relative; top: 50px;
     }
 
 }
@@ -1087,7 +1133,7 @@ h1 {
     main h1 span {
         padding-top: 15px;
         font-size: 30px;
-        position: absolute; top: -10px; left: 10px;
+        position: absolute; top: -90px; left: 10px;
         height: fit-content;
         width: fit-content;
         padding-right: 10px;
@@ -1096,7 +1142,7 @@ h1 {
     #div13 h1 {
         font-size: 40px;
         padding-left: 20px;
-        position: relative; top: -5px;
+        position: relative; top: 80px;
     } 
 
 }
@@ -1110,16 +1156,16 @@ h1 {
     main h1 span {
         padding-top: 10px;
         font-size: 30px;
-        position: absolute; top: -10px; left: 10px;
+        position: absolute; top: -70px; left: 10px;
         height: fit-content;
         width: fit-content;
         padding-right: 10px;
     }
 
-    #div13 h1 {
+    main #Ai-wallpaper-h1 {
         font-size: 30px;
         padding-left: 20px;
-        position: relative; top: 0px;
+        position: relative; top: 100px;
     }
 
 }
@@ -1128,19 +1174,19 @@ h1 {
     display: flex;
     width: 100%;
     height: fit-content;
-    position: relative; top: -150px;
+    position: relative; top: -100px;
     justify-content: center;
     align-items: center;
     align-content: center;
     padding-block: 300px;
 }   
 
-#ABSTRACT-h1 {
+main #ABSTRACT-h1 {
     font-family: 'Alegreya Sans SC', sans-serif;
     padding-left: 35px;
     white-space: nowrap;
-    position: relative; top: 0px;
     font-size: 50px;
+    position: relative; top: 30px;
 }
 
 #div14 {
